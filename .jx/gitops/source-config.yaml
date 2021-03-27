@@ -11,6 +11,14 @@ spec:
     - name: jx3-angular
     - name: jx3-ng
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: cicinelli
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: jx3-from-jenkinsfile
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
